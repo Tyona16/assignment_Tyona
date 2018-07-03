@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<style>
+
+
+	
+</style>
+</head>
+
+<body>
+
+<form>
+	<input type="password" name="gender" value="male" checked> Male<br>
+	<input type="date" name="gender" value="female"> Female<br>
+	<input type="checkbox" name="gender" value="other" checked> Other
+</form>
+
+<form action="">
+	First name:<br>
+	<input type="text" name="firstname" value="John" maxlength="10">
+</form>
+	
+<form action="">
+	First name:<br>
+	<input type="text" name="firstname" vallue="John" size="40">
+</form>
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+
+
+<script>
+var c = document.getElementById("myCanvas") ;
+var ctx = c.getContext("2d") ;
+// ctx.moveTo(0,0);
+// ctx.lineTo(200,100);
+// ctx.stroke();
+// ctx.beginPath();
+// ctx.arc(95,50,40,0,2*Math.PI);
+// ctx.stroke();
+// ctx.font = "30px Arial";
+// ctx.fillText("Hello World",10,50);
+var grd = ctx.createlinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
+
+
+
+
+
+</body>
+
+</html>
